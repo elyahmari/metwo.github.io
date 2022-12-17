@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>My Portfolio</title>
+
+    </head>
+
+    <body>
+
+<style>
+            body {
+    font-family: "Lato", sans-serif;
+background-color: #9e6124;
+   }
+.sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: rgba(250, 184, 109, 0.781);
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+}
+   
+.sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #f5f4f0;
+     display: block;
+     transition: 0.3s;
+}
+   
+.sidenav a:hover {
+     color: #000000c7;
+}
+   
+.sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     float: right;
+}
+
+     .gif{
+        margin-left: 50%;}
+     
+     .content{
+        height:350px ;
+        width: 80%;
+        max-width:500px;
+      }
+      @media only screen and (max-width: 620px){
+        .gifpic{max-width:800px;}
+        .content
+        {
+        max-width:800px;
+        }
+        
+  
+      .gifpic{
+        width: 100%;
+      max-width: 400px;
+      height: auto;
+    float: right;
+    
+      }
+}
+
+span{
+	color: #f5d395;
+}
+.content{
+        height:350px ;
+        width: 80%;
+        max-width:500px;
+        position: absolute;
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+}
+h1{
+        color: #000000;
+        margin: 20px 0px 20px;
+        font-size: 75px;
+}
+h3{
+        color: rgb(41, 39, 39);
+        font-size: 25px;
+        margin-bottom: 50px;
+}
+h4{
+        color: #c7b27a;
+        letter-spacing: 2px;
+        font-size: 20px;
+}
+
+</style>
+   
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a> 
+            <a href="contact.html">CONTACT</a>
+          </div>
+
+        <div class="logo">
+            <h2>PORT<span>FOLIO</span></h2>
+          </div>
+
+          <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;
+            <div class="gif">
+                <img  src="img/p.png" class="gifpic">
+            </div>
+    
+        <div class="content">
+            <h4>I'm</h>
+            <h1>Mariela <span>Navia</span></h1>
+            <h3>Web Designer</h3>
+        </div>
+      
+
+    
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+    </body>
+
+</html>
